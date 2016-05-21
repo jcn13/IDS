@@ -18,7 +18,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   // connection: 'localDiskDb',
-
+  connection: 'MysqlInfnetDev',
   /***************************************************************************
   *                                                                          *
   * How and whether Sails will attempt to automatically rebuild the          *
@@ -27,7 +27,7 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-   migrate: 'alter',
+   migrate: 'drop',
 
   /**
    * This method adds records to the database

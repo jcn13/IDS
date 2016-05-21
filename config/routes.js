@@ -34,7 +34,10 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+  'GET /auth/facebook': {controller: 'AuthController', action: 'facebookAuth'},
+'GET /auth/facebook/callback':    {controller: 'AuthController', action: 'facebookCallback'}
+
 
   /***************************************************************************
   *                                                                          *

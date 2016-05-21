@@ -29,7 +29,7 @@ module.exports.connections = {
   *                                                                          *
   ***************************************************************************/
   localDiskDb: {
-    adapter: 'sails-disk'
+    adapter: 'sails-mysql'
   },
 
   /***************************************************************************
@@ -47,6 +47,13 @@ module.exports.connections = {
   //   password: 'YOUR_MYSQL_PASSWORD', //optional
   //   database: 'YOUR_MYSQL_DB' //optional
   // },
+   MysqlInfnetDev: {
+  adapter: 'sails-mysql',
+  host: 'localhost',
+  user: 'root', //optional
+  password: 'infnet', //optional
+  database: 'infnet' //optional
+  },
 
   /***************************************************************************
   *                                                                          *
