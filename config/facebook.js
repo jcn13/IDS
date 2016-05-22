@@ -61,8 +61,8 @@ var verifyHandler = function(req, token, tokenSecret, profile, done, next) {
 };
 
 passport.use(new FacebookStrategy({
-  clientID: '236529686716119',
-  clientSecret: 'd2ee8f033896950fb3b7e869ba96b60c',
-  callbackURL: 'http://localhost:1337/auth/facebook/callback',
+  clientID: '1593633617615972',
+  clientSecret: '6a963754d624cbd21fe10400a52e52e7',
+  callbackURL: 'http://127.0.0.1:1337/auth/facebook/callback',
   passReqToCallback: true
 }, verifyHandler));

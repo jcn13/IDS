@@ -18,11 +18,28 @@
 
 
 module.exports.policies = {
-  '*': ['isAuthenticated'],
+  //'*': ['isAuthenticated'],
 
-  AuthController: {
+  /*AuthController: {
     '*': true
-  }
+  }*/
+  
+  RestauranteController: {
+      edit: 'isAuthenticated',
+      create: 'isAuthenticated',
+      delete: 'isAuthenticated'
+  },
+  
+  CategoriaController: {
+      edit: 'isAuthenticated',
+      create: 'isAuthenticated',
+      delete: 'isAuthenticated'
+  },
+  
+  UserController: {
+      edit: 'isAuthenticated',
+      delete: 'isAuthenticated'
+  },
 
   /***************************************************************************
   *                                                                          *
