@@ -25,14 +25,14 @@ module.exports = {
       categorias: {
           collection: 'categoria',
           via: 'restaurante'
-      },
-      seedData: [{
-        "nome": "Restaurante Teste",
-        "endereco": "Rua de Teste, 300",
-        "cnpj": "12345678912",
-        "telefone": "99999999",
-        "categorias": []
-      }]
-  }
+      }
+  },
+    seedData: [{
+    "nome": "Restaurante Teste",
+    "endereco": "Rua de Teste, 300",
+    "cnpj": "12345678912",
+    "telefone": "99999999",
+    "categorias": [1]
+    }]
 };
 

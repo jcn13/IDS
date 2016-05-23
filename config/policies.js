@@ -32,7 +32,7 @@ module.exports.policies = {
   
   CategoriaController: {
       edit: 'isAuthenticated',
-      create: 'isAuthenticated',
+      //create: 'isAuthenticated',
       delete: 'isAuthenticated'
   },
   

@@ -40,8 +40,6 @@ module.exports = {
       type: 'string'
     },
    
-    
-
     toJSON: function () {
       var obj = this.toObject();
       delete obj.password;
@@ -58,6 +56,13 @@ module.exports = {
   beforeCreate: function (values, next) {
     CipherService.hashPassword(values);
     next();
-  }
+  },
+  seedData: [
+      {"username": "userseed",
+        "password": "passseed",
+        "email": "seed@host.com",
+        "firstName": "Usuario",
+        "lastName": "Seed"}
+  ]
 };
 

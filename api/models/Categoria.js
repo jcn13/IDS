@@ -14,12 +14,11 @@ module.exports = {
       },
       restaurante: {
           model: 'restaurante'
-      },
-      seedData: [
-          {"nome": "Japonês"},
-          {"nome": "Italiano"},
-          {"nome": "Brasileira"}
-          ]
-  }
+      }
+  },
+    seedData: [
+        {"nome": "Japonês"},
+        {"nome": "Italiano"},
+        {"nome": "Brasileira"}
+        ]
 };
-
